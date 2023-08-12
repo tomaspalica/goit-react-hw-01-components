@@ -11,7 +11,7 @@ const Profile = props => (
       <p className="location">{props.location}</p>
     </div>
   
-    <ul class="stats">
+    <ul className="stats">
       <li>
         <span className="label">Followers</span>
         <span className="quantity">{props.followers}</span>
