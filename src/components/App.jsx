@@ -6,7 +6,7 @@ import friends from "../json/friends"
 import { FriendList } from "./FriendList";
 import transactions from '../json/transactions'
 import { TransactionHistory } from "./TransactionHistory";
-import { upload } from "@testing-library/user-event/dist/upload";
+
 export const App = () => (
     <div>
  <Profile 
