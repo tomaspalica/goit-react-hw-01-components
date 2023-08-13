@@ -1,4 +1,4 @@
-import css from 'TransactionHistory.module.css'
+import css from '../css/TransactionHistory.module.css'
 
 const TransactionHistory = ({transactions}) => (
     <div className= {css.backGround}>
