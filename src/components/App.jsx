@@ -6,6 +6,7 @@ import friends from "../friends"
 import { FriendList } from "./FriendList";
 import transactions from '../transactions'
 import { TransactionHistory } from "./TransactionHistory";
+import { upload } from "@testing-library/user-event/dist/upload";
 export const App = () => (
     <div>
  <Profile 
@@ -19,6 +20,7 @@ likes = {user.stats.likes}
  />
 <Statistics
 data={data}
+title={ "Uploaded Stats"}
 />
 <FriendList friends={friends}/>
 <TransactionHistory transactions={transactions}/>
