@@ -1,7 +1,7 @@
-import css from '../css/TransactionHistory.module.css'
+import css from 'TransactionHistory.module.css'
 
 const TransactionHistory = ({transactions}) => (
-    
+    <div className= {css.backGround}>
     <table className={css.transactionHistory }>
      
     <thead>
@@ -27,6 +27,6 @@ const TransactionHistory = ({transactions}) => (
     </tbody>
     
   </table> 
-  
+  </div>
 )
 export {TransactionHistory}

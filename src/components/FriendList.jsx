@@ -1,4 +1,4 @@
-import css from '../css/Firendlist.module.css'
+import css from '../Firendlist.module.css'
 
 const FriendList = ({friends}) => (
     <ul className={css.friendList}>

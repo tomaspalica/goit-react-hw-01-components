@@ -1,10 +1,10 @@
 import { Profile } from "./Profile";
-import data from "../json/data"
-import user from "../json/user"
+import data from "../data"
+import user from "../user"
 import { Statistics } from "./Statistics";
-import friends from "../json/friends"
+import friends from "../friends"
 import { FriendList } from "./FriendList";
-import transactions from '../json/transactions'
+import transactions from '../transactions'
 import { TransactionHistory } from "./TransactionHistory";
 import { upload } from "@testing-library/user-event/dist/upload";
 export const App = () => (
