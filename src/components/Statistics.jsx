@@ -1,14 +1,15 @@
 import css from '../css/Statistics.module.css'
-
+import PropTypes from "prop-types";
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
 
-const Statistics = ({data,title})=> (
+const Statistics = ({data})=> (
 <section className={css.statistics}>
-  <h2 className="title">{title}</h2>
+  {data.title && (<h2 className="title">{data.title}</h2>)}
+  
 
   <ul className={css.statList}> {
  data.map(stat => (
@@ -23,4 +24,14 @@ const Statistics = ({data,title})=> (
   </ul>
 </section>    
 )
+
+Statistics.propTypes ={
+  title: PropTypes.string,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+}
 export {Statistics}
