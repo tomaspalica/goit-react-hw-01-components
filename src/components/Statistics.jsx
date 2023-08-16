@@ -6,9 +6,9 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const Statistics = ({data})=> (
+const Statistics = ({data, title =""})=> (
 <section className={css.statistics}>
-  {data.title && (<h2 className="title">{data.title}</h2>)}
+  {title.length > 0 && (<h2 className="title">{title}</h2>)}
   
 
   <ul className={css.statList}> {
